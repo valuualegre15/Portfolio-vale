@@ -234,12 +234,23 @@ nav ul li a {
 /*  Header
 /*-----------------------------------------------------------------------------------*/
 
+
+
+.name-logo{
+  width: 100px !important;
+}
+
+#img-me{
+  filter: grayscale(100%);
+}
+
+
+
 #header {
-  /*background: url("../images/home-bg.jpg") repeat scroll center center / cover;*/
-  /* background-color: #001b27;*/
-  background-color: #1d3657;
-  height: 90vh;
+  background-color: #aa6f6fe5;
+  height: 100vh;
   width: 100%;
+  
 }
 
 
@@ -296,9 +307,45 @@ nav ul li a {
   padding-top: 190px;
 }
 
+
+.video-container {
+  display: flex;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.video-container video:last-child {
+  margin-right: 0;
+}
+
+.video-container {
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar los videos horizontalmente */
+  max-width: 1200px; /* Ancho máximo de la galería de videos */
+  margin: 0 auto; /* Centrar la galería en la página */
+}
+
+.video-container video {
+  width: calc(43.33% - 20px); /* Ancho de cada video (ajustable según tu diseño) */
+  height: auto;
+  margin: 10px; /* Margen entre los videos */
+}
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 868px) {
+  .video-container video {
+    width: 100%; /* Ancho completo en dispositivos pequeños */
+  }
+}
+
+
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #2a83b5;
+  border: 20px solid #aa6f6fe5;
 }
 
 #about .div-img-bg .about-img img {
